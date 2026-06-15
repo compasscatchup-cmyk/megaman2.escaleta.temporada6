@@ -439,6 +439,42 @@
   .notes-box li{padding-left:18px; position:relative; color:var(--text-dim); font-size:14px;}
   .notes-box li::before{content:"●"; position:absolute; left:0; color:var(--mm-red); font-size:8px; top:6px;}
 
+  /* bibliography / sources */
+  .source-card{
+    margin-bottom:22px;
+    padding:20px 22px;
+    background:var(--panel);
+    border:2px solid var(--line);
+    border-radius:6px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .source-card .icon{
+    flex:none;
+    font-size:28px;
+    line-height:1;
+    margin-top:2px;
+  }
+  .source-card .body{flex:1; min-width:0;}
+  .source-card .kind{
+    font-family:var(--pixel);
+    font-size:10px;
+    letter-spacing:2px;
+    color:var(--mm-yellow);
+    margin-bottom:8px;
+    display:block;
+  }
+  .source-card .title{
+    font-weight:700;
+    font-size:16px;
+    color:#fff;
+    margin-bottom:6px;
+  }
+  .source-card p{margin:0 0 8px 0; font-size:14px;}
+  .source-card p:last-child{margin-bottom:0;}
+  .source-card a{word-break:break-all;}
+
   /* ---------- FOOTER ---------- */
   footer{
     padding:56px 0 90px;
@@ -566,6 +602,7 @@
       <a class="stage-tile" href="#s4"><span class="num">04</span><span class="name">Anécdotas memorables</span></a>
       <a class="stage-tile" href="#s5"><span class="num">05</span><span class="name">Legado y mirada actual</span></a>
       <a class="stage-tile" href="#s6"><span class="num">06</span><span class="name">Cierre y veredicto</span></a>
+      <a class="stage-tile" href="#s7"><span class="num">07</span><span class="name">Bibliografía y fuentes</span></a>
     </div>
   </div>
 </nav>
@@ -748,6 +785,48 @@
         <li>Si hay video, mostrar el box art clásico de MM2 durante el segmento 3.4.</li>
         <li>Clips sugeridos: respuesta a la pregunta ancla + recomendación de acercamiento (cierre), y ronda de anécdotas (segmento 4).</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SEGMENTO 7 -->
+  <section class="segment" id="s7">
+    <div class="segment-head">
+      <div class="segment-num">07</div>
+      <div class="segment-titles">
+        <h3>BIBLIOGRAFÍA Y FUENTES</h3>
+        <div class="duration">PARA EL EQUIPO Y LA AUDIENCIA</div>
+      </div>
+    </div>
+    <p>Material de apoyo para la preparación del episodio y referencias para quienes quieran profundizar después de escucharlo.</p>
+
+    <div class="source-card">
+      <span class="icon">📖</span>
+      <div class="body">
+        <span class="kind">LIBRO · BOSS FIGHT BOOKS</span>
+        <div class="title">Mega Man 3 — Salvatore Pane (Boss Fight Books #14)</div>
+        <p>Aunque el libro está centrado en Mega Man 3, dedica buena parte de su primera mitad a reconstruir el desarrollo de <strong>Mega Man 2</strong> como antecedente directo: cómo Capcom pasó de un juego que casi no se vendió (Mega Man 1) a una secuela hecha con presupuesto mínimo y horas extra no pagadas por el equipo, que terminó salvando a la franquicia. Mezcla investigación sobre la industria japonesa de los 80 con la experiencia personal del autor coleccionando cartuchos de NES.</p>
+        <p><a href="https://bossfightbooks.com/products/mega-man-3-by-salvatore-pane" target="_blank" rel="noopener">bossfightbooks.com</a></p>
+      </div>
+    </div>
+
+    <div class="source-card">
+      <span class="icon">🎮</span>
+      <div class="body">
+        <span class="kind">WALKTHROUGH SIN COMENTARIOS</span>
+        <div class="title">Mega Man 2 — Longplay Walkthrough (Normal Mode) | No Commentary</div>
+        <p>Recorrido completo del juego en su versión de NES, sin comentarios, ideal para tener de referencia visual durante la preparación del episodio o para que la audiencia complemente la conversación.</p>
+        <p><a href="https://www.youtube.com/watch?v=f2aGA-NOeo0" target="_blank" rel="noopener">youtube.com/watch?v=f2aGA-NOeo0</a></p>
+      </div>
+    </div>
+
+    <div class="source-card">
+      <span class="icon">🎙️</span>
+      <div class="body">
+        <span class="kind">ENTREVISTA CON LOS DESARROLLADORES</span>
+        <div class="title">The Birth of Mega Man — 2011 Developer Interview (shmuplations.com)</div>
+        <p>Entrevista extensa con <strong>Akira Kitamura</strong>, diseñador principal de Mega Man 1 y 2, conducida por el ilustrador Hitoshi Ariga. Cubre el diseño original de los personajes, las decisiones de diseño de niveles y anécdotas de producción directamente desde la fuente. En inglés.</p>
+        <p><a href="https://shmuplations.com/megaman/" target="_blank" rel="noopener">shmuplations.com/megaman</a></p>
+      </div>
     </div>
   </section>
 
