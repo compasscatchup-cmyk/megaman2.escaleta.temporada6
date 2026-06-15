@@ -343,8 +343,11 @@
   }
   .context-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    grid-template-columns:repeat(2, 1fr);
     gap:18px;
+  }
+  @media (max-width:680px){
+    .context-grid{grid-template-columns:1fr;}
   }
   .context-item{
     display:flex;
@@ -599,6 +602,10 @@
         <div class="context-item">
           <span class="ico-label">🎬 EN EL CINE</span>
           <p>1989 fue el año de <em>Batman</em> de Tim Burton con Michael Keaton (estreno mundial en junio), además de <em>Indiana Jones y la Última Cruzada</em> y <em>Karate Kid III</em> — el ambiente de acción/aventura en el que un niño mexicano recibía un juego como Mega Man 2.</p>
+        </div>
+        <div class="context-item">
+          <span class="ico-label">🏙️ EN EL DF (CIUDAD DE CHARLIE)</span>
+          <p>En enero, el líder petrolero <em>Joaquín Hernández Galicia "La Quina"</em> fue detenido y trasladado al Reclusorio Oriente de la capital, uno de los golpes políticos más sonados del nuevo gobierno; en mayo un incendio destruyó el <em>Palacio Legislativo de San Lázaro</em>; y en noviembre arrancó el programa <em>"Hoy No Circula"</em> en la zona metropolitana, que cambiaría para siempre la rutina diaria de millones de familias del DF.</p>
         </div>
       </div>
     </div>
